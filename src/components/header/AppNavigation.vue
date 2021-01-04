@@ -1,5 +1,6 @@
 <template>
   <div class="navigation-menu">
+    <div class="navigation-end">
     <template v-for="(item, i) in items">
       <div class="navigation-item" :key="i">
         <router-link
@@ -14,6 +15,7 @@
         </router-link>
       </div>
     </template>
+    </div>
   </div>
 </template>
 

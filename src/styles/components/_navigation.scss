@@ -1,0 +1,50 @@
+$navigation-link-color: #520E00;
+
+.navigation {
+  > .container {
+    display: flex;
+    align-items: stretch;
+  }
+}
+
+.navigation-brand {
+
+}
+
+.navigation-menu {
+
+}
+
+// mobile
+
+@include laptop {
+  .navigation,
+  .navigation-menu,
+  .navigation-end {
+    display: flex;
+    align-items: stretch;
+  }
+
+  .navigation-menu {
+    flex-grow: 1;
+    flex-shrink: 0;
+  }
+
+  .navigation-end {
+    justify-content: flex-end;
+    margin-left: auto;
+  }
+
+  .navigation-item {
+    display: flex;
+    align-items: center;
+  }
+
+  .navigation-link {
+    &__text {
+      display: inline-flex;
+      padding: 0 1em;
+      color: $navigation-link-color;
+    }
+  }
+}

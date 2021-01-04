@@ -1,6 +1,6 @@
 <template>
   <header class="main-header">
-    <div>
+    <nav class="navigation">
       <div class="container">
         <div class="navigation-brand">
           <div class="navigation-item">
@@ -11,7 +11,7 @@
         </div>
         <AppNavigation/>
       </div>
-    </div>
+    </nav>
   </header>
 </template>
 
