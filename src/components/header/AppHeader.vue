@@ -1,5 +1,6 @@
 <template>
   <header class="main-header">
+    <AppSubHeader/>
     <nav class="navigation">
       <div class="container">
         <div class="navigation-brand">
@@ -18,10 +19,12 @@
 <script>
 import AppLogo from '@/components/logo/AppLogo'
 import AppNavigation from '@/components/header/AppNavigation'
+import AppSubHeader from '@/components/header/AppSubHeader'
 
 export default {
   name: 'AppHeader',
   components: {
+    AppSubHeader,
     AppNavigation,
     AppLogo
   }

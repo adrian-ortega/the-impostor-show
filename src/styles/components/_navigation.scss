@@ -1,6 +1,10 @@
-$navigation-link-color: #520E00;
+$navigation-link-color: $primary;
 
 .navigation {
+  @include laptop {
+    padding-top: 45px;
+  }
+
   > .container {
     display: flex;
     align-items: stretch;

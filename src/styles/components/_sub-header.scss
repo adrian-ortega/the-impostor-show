@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+.main-header__sub {
+  background: $secondary;
+  padding: 9px 0;
+
+  > .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .notification {
+    display: flex;
+    color: $white;
+    text-transform: uppercase;
+    font-weight: $weight-bold;
+
+    a {
+      display: inline-flex;
+      color: $yellow;
+      transition: text-shadow 100ms linear;
+
+      &:hover {
+        text-shadow: 2px 2px 0 $primary,
+                    -1px 0px 0 $primary,
+                    0px -1px 0 $primary;
+      }
+    }
+  }
+}
