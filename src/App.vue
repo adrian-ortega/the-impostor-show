@@ -1,5 +1,11 @@
 <template>
   <div id="app">
-    <p>Hello Marina</p>
+    <router-view/>
   </div>
 </template>
+
+<script>
+export default {
+  name: 'App'
+}
+</script>
