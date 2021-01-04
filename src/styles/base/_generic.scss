@@ -1,0 +1,71 @@
+html {
+  background: $white;
+  font-size: 16px;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  min-width: 300px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  text-rendering: optimizeLegibility;
+  // text-adjust: 100%;
+}
+
+article,
+main,
+aside,
+figure,
+header,
+section {
+  display: block;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+  font-family: $family-primary;
+}
+
+code,
+pre {
+  font-family: $family-monospace;
+}
+
+body {
+  color: $text;
+  font-size: 1em;
+  font-weight: $weight-normal;
+  line-height: 1.5;
+}
+
+// Inline
+
+a {
+  color: $link;
+  cursor: pointer;
+  text-decoration: none;
+
+  &:hover {
+    color: $link-hover;
+  }
+
+  &:visited {
+    color: $link-visited;
+  }
+
+  &:active {
+    color: $link-active;
+  }
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+small {
+  font-size: $size-small;
+}
+
+
