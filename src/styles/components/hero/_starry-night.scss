@@ -1,0 +1,51 @@
+.hero-starry-night {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60%;
+  z-index: 10;
+
+  &,
+  .star {
+    position: absolute;
+  }
+
+  .star {
+    display: inline-block;
+    background: rgba($white, .75);
+    opacity: 0;
+    height: 5px;
+    width: 5px;
+    top: 50%;
+    border-radius: $radius-rounded;
+    box-shadow: 0 0 4px $yellow;
+    animation-name: starry-blink;
+    animation-timing-function: $easing;
+    animation-delay: 0s;
+    animation-direction: alternate;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+
+    &--a {
+      height: 1px;
+      width: 1px;
+    }
+
+    &--b {
+      height: 2px;
+      width: 2px;
+      background: scale-color($blue, $lightness: 30%)
+    }
+
+    &--c {
+      height: 3px;
+      width: 3px;
+    }
+
+    &--d {
+      height: 1px;
+      width: 1px;
+      box-shadow: 0 0 4px scale-color($purple, $lightness: 30%)
+    }
+  }
+}

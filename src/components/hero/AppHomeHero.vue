@@ -8,12 +8,16 @@
         </h1>
       </div>
     </div>
-    <div class="main-hero__background"></div>
+    <div class="main-hero__background">
+      <HeroStarryNight/>
+    </div>
   </div>
 </template>
 
 <script>
+import HeroStarryNight from '@/components/hero/HeroStarryNight'
 export default {
-  name: 'AppHomeHero'
+  name: 'AppHomeHero',
+  components: { HeroStarryNight }
 }
 </script>

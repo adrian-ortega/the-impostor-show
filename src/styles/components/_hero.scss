@@ -1,6 +1,6 @@
 .main-hero {
   z-index: 2;
-  min-height: 480px;
+  min-height: 50rem;
   height: 100vh;
 
   &,
@@ -40,4 +40,6 @@
     background-position: center bottom;
     background-size: cover;
   }
+
+  @import "hero/starry-night";
 }
