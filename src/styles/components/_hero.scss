@@ -1,0 +1,43 @@
+.main-hero {
+  z-index: 2;
+  min-height: 480px;
+  height: 100vh;
+
+  &,
+  &__content {
+    position: relative;
+  }
+
+  &__content {
+    padding-top: 250px;
+    z-index: 5;
+
+    h1 {
+      font-size: $size-1;
+      line-height: 1.25;
+      color: $grey-light;
+      text-shadow: 1px 1px 2px rgba($black, 0.1);
+
+      strong,
+      span {
+        display: block;
+      }
+
+      strong {
+        color: $white-ter;
+      }
+    }
+  }
+
+  &__background {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/assets/images/hero-bg.jpg');
+    background-position: center bottom;
+    background-size: cover;
+  }
+}

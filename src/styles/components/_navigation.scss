@@ -49,6 +49,12 @@ $navigation-link-color: $primary;
       display: inline-flex;
       padding: 0 1em;
       color: $navigation-link-color;
+
+      @at-root {
+        .navigation--inverted & {
+          color: $white;
+        }
+      }
     }
   }
 }
